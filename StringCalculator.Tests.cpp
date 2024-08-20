@@ -38,7 +38,7 @@ TEST(string_calculator_add_when_passed_two_comma_delimited_numbers,returns_their
  //Arrange
   StringCalculator calculator;
   string input1="1";
-  string input2="2"
+  string input2="2";
   int expectedsum=3;
   //Act
   int actualSum=calculator.Add(input1,input2);
