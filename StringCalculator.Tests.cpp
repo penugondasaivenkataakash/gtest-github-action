@@ -45,3 +45,16 @@ TEST(string_calculator_add_when_passed_two_comma_delimited_numbers,returns_their
   //Assert
   ASSERT_EQ(actualSum,expectedsum);
 }
+
+TEST(string_calculator_add_when_passed_multiple_comma_delimited_numbers){
+ //Arrange
+  StringCalculator calculator;
+  string input1="1";
+  string input2="2";
+  string input3="3";
+  int expectedsum=6;
+  //Act
+  int actualSum=calculator.Add(input1,input2,input3);
+  //Assert
+  ASSERT_EQ(actualSum,expectedsum);
+}
