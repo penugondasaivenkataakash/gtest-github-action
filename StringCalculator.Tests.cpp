@@ -37,11 +37,10 @@ TEST(string_calculator_add_when_passed_a_single_number,returns_1_for_one){
 TEST(string_calculator_add_when_passed_two_comma_delimited_numbers,returns_their_sum){
  //Arrange
   StringCalculator calculator;
-  string input1="1";
-  string input2="2";
+  string input="1,2";
   int expectedsum=3;
   //Act
-  int actualSum=calculator.Add(input1,input2);
+  int actualSum=calculator.Add(input);
   //Assert
   ASSERT_EQ(actualSum,expectedsum);
 }
@@ -49,12 +48,10 @@ TEST(string_calculator_add_when_passed_two_comma_delimited_numbers,returns_their
 TEST(string_calculator_add_when_passed_multiple_comma_delimited_numbers){
  //Arrange
   StringCalculator calculator;
-  string input1="1";
-  string input2="2";
-  string input3="3";
+  string input="1,2,3";
   int expectedsum=6;
   //Act
-  int actualSum=calculator.Add(input1,input2,input3);
+  int actualSum=calculator.Add(input);
   //Assert
   ASSERT_EQ(actualSum,expectedsum);
 }
@@ -62,12 +59,10 @@ TEST(string_calculator_add_when_passed_multiple_comma_delimited_numbers){
 TEST(string_calculator_add_when_delimited_with_newline_and_comma){
  //Arrange
   StringCalculator calculator;
-  string input1="1";
-  string input2="2";
-  string input3="3";
+  string input="1\n2,3";
   int expectedsum=6;
   //Act
-  int actualSum=calculator.Add(input1,input2,input3);
+  int actualSum=calculator.Add(input);
   //Assert
   ASSERT_EQ(actualSum,expectedsum);
 }
