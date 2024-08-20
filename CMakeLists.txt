@@ -21,7 +21,6 @@ add_executable(
   PrintColorCode.cpp
   PrintColorCode.Tests.cpp
   StringCalculator.cpp
-  #StringCalculator.Tests.cpp
   StringCalculatorFixture.Tests.cpp
 )
 target_link_libraries(
