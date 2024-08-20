@@ -45,7 +45,7 @@ TEST(string_calculator_add_when_passed_two_comma_delimited_numbers,returns_their
   ASSERT_EQ(actualSum,expectedsum);
 }
 
-TEST(string_calculator_add_when_passed_multiple_comma_delimited_numbers){
+TEST(string_calculator_add_when_passed_multiple_comma_delimited_numbers,returns_their_sum){
  //Arrange
   StringCalculator calculator;
   string input="1,2,3";
@@ -56,7 +56,7 @@ TEST(string_calculator_add_when_passed_multiple_comma_delimited_numbers){
   ASSERT_EQ(actualSum,expectedsum);
 }
 
-TEST(string_calculator_add_when_delimited_with_newline_and_comma){
+TEST(string_calculator_add_when_delimited_with_newline_and_comma,returns_their_sum){
  //Arrange
   StringCalculator calculator;
   string input="1\n2,3";
