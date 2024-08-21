@@ -1,4 +1,5 @@
 #include <iostream>
+#include "TestChallenge.h"
 
 
 int alertFailureCount = 0;
