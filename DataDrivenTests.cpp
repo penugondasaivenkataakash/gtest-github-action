@@ -28,7 +28,7 @@ INSTANTIATE_TEST_SUITE_P(SingleNumerParameter,
                                         std::make_tuple("//[**][%^]\n4**1%^9",14)
   ));
 
-TEST_F(StringCalculatorAddTestFixture, string_calculator_add_when_passed_negative_number_throws_an_exception_listing_invalid_values){
+TEST_F(string_calculator_add_Fixture, string_calculator_add_when_passed_negative_number_throws_an_exception_listing_invalid_values){
   string input="1,-2,-4,5";
   ASSERT_THROW(calculator.Add(input),invalid_argument);
 }
