@@ -4,7 +4,7 @@
 
 int alertFailureCount = 0;
 
-int networkAlerter(float celcius) {
+int realTimenetworkAlerter(float celcius) {
    //Real Network Interaction Happens Here
     // Return 200 for ok
     // Return 500 for not-ok
@@ -14,7 +14,7 @@ int networkAlerter(float celcius) {
   return 500;
 }
 
-void alertInCelcius(float farenheit) {
+void alertInCelcius(float farenheit,int(*networkAlerter)(float celcius)) {
     float celcius = (farenheit - 32) * 5 / 9;
     int returnCode = networkAlerter(celcius);
     if (returnCode != 200) {
